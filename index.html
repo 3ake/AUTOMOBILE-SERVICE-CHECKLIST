@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Vehicle Service Checklist</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Maintenance schedules for Toyota Landcruiser 200, Lexus LX570, and Hyundai Accent">
+    <meta name="theme-color" content="#3498db">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Service Checklist">
+    
+    <!-- App Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="combined.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-car"></i> Vehicle Service Checklist</h1>
+            <p>Maintenance schedules for your vehicles</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#intervals">Service Intervals</a></li>
+                <li><a href="#mileage">Mileage Checklist</a></li>
+                <li><a href="#details">Service Details</a></li>
+                <li><a href="#record">Service Record</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="vehicles">
+                <h2>Vehicle Information</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Make</th>
+                                <th>Model</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vehicle 1</td>
+                                <td>Toyota</td>
+                                <td>Landcruiser 200</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Vehicle 2</td>
+                                <td>Lexus</td>
+                                <td>LX570</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Vehicle 3</td>
+                                <td>Hyundai</td>
+                                <td>Accent</td>
+                                <td>2015</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="intervals">
+                <h2>Service Interval Quick Reference</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service Type</th>
+                                <th>Toyota Landcruiser 200</th>
+                                <th>Lexus LX570</th>
+                                <th>Hyundai Accent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Basic Service</strong></td>
+                                <td>Every 5,000 miles<br>(10,000 for synthetic oil)</td>
+                                <td>Every 5,000 miles<br>(10,000 for oil change)</td>
+                                <td>Every 7,500 miles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intermediate Service</strong></td>
+                                <td>Every 15,000 miles</td>
+                                <td>Every 15,000 miles</td>
+                                <td>Every 15,000 miles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Major Service</strong></td>
+                                <td>Every 30,000 miles</td>
+                                <td>Every 30,000 miles</td>
+                                <td>Every 30,000 miles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="mileage">
+                <h2>Mileage-Based Service Checklist</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">5,000 Miles / 6 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fluid Level Check</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multi-point Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Check Floor Mats</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Check Exterior Lights</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reset Maintenance Reminder</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">7,500 Miles / 6 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Battery Check</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fluid Level Check</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multi-point Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Check Windshield Wipers</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Check Tire Pressure</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inspect Suspension Components</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">10,000 Miles / 12 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change (Synthetic)</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cabin Air Filter Replacement</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wiper Blade Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multi-point Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Road Test</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">15,000 Miles / 18 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine Air Filter Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drive Axle Boots Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Exhaust System Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Steering & Suspension Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Driveshaft Lubrication</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transfer Case & Differential Fluid Check</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine Coolant Inspection</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inspect Chassis Bolts & Nuts</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Road Test</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">30,000 Miles / 24 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cabin Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Fluid Replacement</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel System Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Air Conditioner Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Parking Brake Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Inspect Ignition Wires/Distributor Cap</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Measure Brake Pad Thickness</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Road Test</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">60,000 Miles / 48 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cabin Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Fluid Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transmission Fluid Inspection/Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drive Belt Inspection</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel System Inspection</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spark Plug Inspection/Replacement</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel Lines & Hoses Inspection</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel Tank & Filler Cap Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Road Test</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">120,000 Miles / 96 Months</button>
+                        <div class="accordion-content">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Service Item</th>
+                                            <th>Toyota Landcruiser 200</th>
+                                            <th>Lexus LX570</th>
+                                            <th>Hyundai Accent</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Engine Oil & Filter Change</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tire Rotation</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake Inspection</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cabin Air Filter Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spark Plug Replacement</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cooling System Service</td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake System Flush</td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Drive Belt Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manual Transaxle Fluid (if applicable)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vapor Hose & Fuel Filler Cap Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suspension Mounting Bolts Inspection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Road Test</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                            <td class="check">✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="details">
+                <h2>Service Item Details</h2>
+                
+                <div class="service-details">
+                    <div class="service-item">
+                        <h3>Engine Oil & Filter Change</h3>
+                        <ul>
+                            <li><strong>Toyota Landcruiser 200:</strong> Use 0W-20 synthetic oil, capacity approximately 8.5 quarts</li>
+                            <li><strong>Lexus LX570:</strong> Use 0W-20 synthetic oil, capacity approximately 8.5 quarts</li>
+                            <li><strong>Hyundai Accent:</strong> Use 5W-20 or 5W-30 oil, capacity approximately 3.8 quarts</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-item">
+                        <h3>Tire Rotation</h3>
+                        <ul>
+                            <li>Rotate tires according to the pattern specified in your owner's manual</li>
+                            <li>Check tire pressure and adjust to recommended PSI</li>
+                            <li>Inspect tires for wear, damage, and proper tread depth</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-item">
+                        <h3>Brake Inspection</h3>
+                        <ul>
+                            <li>Inspect brake pads, rotors, and calipers for wear and damage</li>
+                            <li>Check brake fluid level and condition</li>
+                            <li>Test brake system operation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-item">
+                        <h3>Fluid Level Check</h3>
+                        <ul>
+                            <li>Engine oil</li>
+                            <li>Transmission fluid</li>
+                            <li>Brake fluid</li>
+                            <li>Power steering fluid</li>
+                            <li>Coolant</li>
+                            <li>Windshield washer fluid</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="notes">
+                <h2>Important Notes</h2>
+                <div class="notes-content">
+                    <ul>
+                        <li>For Toyota Landcruiser 200 and Lexus LX570, synthetic oil change interval is 10,000 miles</li>
+                        <li>For Hyundai Accent, synthetic oil change interval is 7,500 miles</li>
+                        <li>Service intervals may need to be more frequent under severe driving conditions:
+                            <ul>
+                                <li>Extensive idling or low-speed driving</li>
+                                <li>Driving in dusty conditions</li>
+                                <li>Towing or carrying heavy loads</li>
+                                <li>Frequent short trips (less than 5 miles)</li>
+                                <li>Extreme temperatures (very hot or very cold)</li>
+                            </ul>
+                        </li>
+                        <li>Always refer to your vehicle's owner manual for specific recommendations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="record">
+                <h2>Service Record</h2>
+                <div class="table-responsive">
+                    <table id="service-record-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Vehicle</th>
+                                <th>Mileage</th>
+                                <th>Service Performed</th>
+                                <th>Next Service Due</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="service-record-body">
+                            <!-- Service records will be added here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="add-record">
+                    <h3>Add New Service Record</h3>
+                    <form id="service-record-form">
+                        <div class="form-group">
+                            <label for="service-date">Date:</label>
+                            <input type="date" id="service-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-vehicle">Vehicle:</label>
+                            <select id="service-vehicle" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="Toyota Landcruiser 200 (2017)">Toyota Landcruiser 200 (2017)</option>
+                                <option value="Lexus LX570 (2017)">Lexus LX570 (2017)</option>
+                                <option value="Hyundai Accent (2015)">Hyundai Accent (2015)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-mileage">Mileage:</label>
+                            <input type="number" id="service-mileage" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-performed">Service Performed:</label>
+                            <textarea id="service-performed" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="next-service">Next Service Due:</label>
+                            <input type="text" id="next-service" required>
+                        </div>
+                        <button type="submit" class="btn">Add Record</button>
+                    </form>
+                </div>
+            </section>
+            
+            <section id="install-instructions" class="ios-only">
+                <h2>Install on iPhone</h2>
+                <div class="notes-content">
+                    <p>To install this app on your iPhone:</p>
+                    <ol>
+                        <li>Open this page in Safari</li>
+                        <li>Tap the Share button <i class="fas fa-share-square"></i> at the bottom of the screen</li>
+                        <li>Scroll down and tap "Add to Home Screen"</li>
+                        <li>Tap "Add" in the top-right corner</li>
+                    </ol>
+                    <p>Once installed, you can access your vehicle service checklist directly from your home screen, even when offline!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vehicle Service Checklist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Combined JavaScript -->
+    <script src="combined.js"></script>
+    <script src="install-guide-link.js"></script>
+</body>
+</html>
